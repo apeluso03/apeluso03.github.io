@@ -7,8 +7,5 @@
 }
 
 .links {
-    display: table;
-    margin: 0 auto;
-    list-style-position: inside;
     list-style-type: none;
 }
