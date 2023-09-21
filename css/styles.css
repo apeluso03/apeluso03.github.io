@@ -41,7 +41,7 @@
 
 .navbar ul li a {
     text-decoration: none;
-    color: #00A4BD;
+    color: #cccc22;
     text-transform: uppercase;
 }
 
@@ -49,7 +49,7 @@
     content: '';
     height: 3px;
     width: 0;
-    background: #cccc22;
+    background: #00A4BD;
     position: absolute;
     left: 0;
     bottom: -10px;
