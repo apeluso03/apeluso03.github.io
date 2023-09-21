@@ -1,22 +1,12 @@
 .box {
-    padding-top: 100px;
     text-align: center;
-    background-color: #EAF0F6;
-    color: #33475B;
-    border: 3px solid #00A4BD;
-    padding: 5px;
+    background-color: rgb(48, 47, 47);
+    color: #cccc22;
+    /* border: 3px solid #00A4BD; */
 }
 
 .links {
     list-style-type: none;
-}
-
-.banner {
-    width: 100%;
-    height: 20vh;
-    background-color: grey;
-    background-size: cover;
-    background-position: center;
 }
 
 .navbar {
@@ -24,12 +14,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    margin: 0;
-    padding: 5px;
-    display: flex;
+    z-index: 999;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden;
     background-color: rgb(48, 47, 47);
 }
 
