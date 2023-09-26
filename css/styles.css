@@ -5,6 +5,12 @@
     padding: 20px;
 }
 
+.contactform {
+    background-color: rgb(48, 47, 47);
+    color :#cccc22;
+    padding: 20px;
+}
+
 .links {
     list-style-type: none;
 }
