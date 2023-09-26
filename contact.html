@@ -7,6 +7,7 @@
         <title>Contact</title>
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script src="/src/contact.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
 <body style="background-color: #00A4BD;">
     <div class="navbar">
@@ -45,6 +46,7 @@
                 <br>
                 <textarea id="user_message" class="form-control messageBox" required rows="5"></textarea>
             </div>
+            <div class="g-recaptcha" data-sitekey="6Ld1YVYoAAAAAPuAKlKpSQXauxDDqzybyyG6CKbl"></div>
             <input type="submit" id="go" class="button" value="Submit">
             <span class="success" id="success">Thank you for your message!</span>
         </form>
