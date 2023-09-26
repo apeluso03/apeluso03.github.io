@@ -72,5 +72,5 @@ function ValidatePhone(input) {
     }
 }
 function enableBtn(){
-    document.getElementById("button1").disabled=false;
+    document.getElementById("go").disabled=false;
 }
