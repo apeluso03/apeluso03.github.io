@@ -53,3 +53,92 @@
 .navbar ul li:hover::after {
     width: 100%;
 }
+
+.dropdown{
+    position: relative;
+    margin-bottom: 10px  }
+
+  .down{
+    position: absolute;
+    top: 20px;
+    left: 0%; 
+    opacity: 0; 
+    visibility: hidden; 
+    width: 0; 
+    background-color: rgb(27, 27, 27); 
+    z-index: 1010; 
+    transition: all 0.3s; 
+}
+
+.dropdown:hover .down{
+  opacity: 1;
+  visibility: visible;
+  width: 200px; 
+  padding: 10px 0px;
+  margin-bottom: 100px;
+}
+
+.down a{
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #1e292B;
+}
+
+.down a:hover{
+  background-color: rgb(27, 27, 27);
+  color: #cccc22;
+}
+
+.down li, .down a{
+  background-color: rgb(27, 27, 27);
+}
+
+.footer {
+    text-align: center;
+    background-color: rgb(48, 47, 47);
+    color: #cccc22;
+    padding: 20px;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .social-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer .social-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #cccc22;
+    transition: color 0.3s; /* Add a smooth color transition */
+}
+
+.footer .social-links a:hover {
+    color: #00A4BD; /* Change color on hover to match the navbar */
+}
+
+.footer .contact-info {
+    text-align: left; /* Align contact info to the left */
+}
+
+/* Style links in the contact info if needed */
+.footer .contact-info a {
+    text-decoration: none;
+    color: #cccc22;
+    transition: color 0.3s; /* Add a smooth color transition */
+}
+
+.footer .contact-info a:hover {
+    color: #00A4BD; /* Change color on hover to match the navbar */
+}
+
+
+
+
+
