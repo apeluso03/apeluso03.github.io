@@ -1,13 +1,13 @@
 .box {
     text-align: center;
-    background-color: rgb(48, 47, 47);
-    color: #cccc22;
-    padding: 20px;
+    background-color: #3A3335;
+    color: #ECCE8E;
+    padding: 0px;
 }
 
 .emailstyle {
-    background-color: rgb(48, 47, 47);
-    color :#cccc22;
+    background-color: #3A3335;
+    color :#ECCE8E;
     padding: 20px;
 }
 
@@ -23,7 +23,7 @@
     z-index: 999;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(48, 47, 47);
+    background-color: #3A3335;
 }
 
 .navbar ul li {
@@ -35,7 +35,7 @@
 
 .navbar ul li a {
     text-decoration: none;
-    color: #cccc22;
+    color: #ECCE8E;
     text-transform: uppercase;
 }
 
@@ -43,7 +43,7 @@
     content: '';
     height: 3px;
     width: 0;
-    background: #00A4BD;
+    background: #ED6A5A;
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -87,58 +87,33 @@
 
 .down a:hover{
   background-color: rgb(27, 27, 27);
-  color: #cccc22;
+  color: #ECCE8E;
 }
 
 .down li, .down a{
   background-color: rgb(27, 27, 27);
 }
 
-.footer {
-    text-align: center;
-    background-color: rgb(48, 47, 47);
-    color: #cccc22;
-    padding: 20px;
-}
-
-.footer .footer-content {
-    display: flex;
+.footerLinks {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
+    background-color: #3A3335;
 }
 
-.footer .social-links {
-    display: flex;
-    align-items: center;
+.footerLinks ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
 }
 
-.footer .social-links a {
-    margin-left: 20px;
+.footerLinks ul li a {
     text-decoration: none;
-    color: #cccc22;
-    transition: color 0.3s; /* Add a smooth color transition */
+    color: #ECCE8E;
+    text-transform: uppercase;
 }
-
-.footer .social-links a:hover {
-    color: #00A4BD; /* Change color on hover to match the navbar */
-}
-
-.footer .contact-info {
-    text-align: left; /* Align contact info to the left */
-}
-
-/* Style links in the contact info if needed */
-.footer .contact-info a {
-    text-decoration: none;
-    color: #cccc22;
-    transition: color 0.3s; /* Add a smooth color transition */
-}
-
-.footer .contact-info a:hover {
-    color: #00A4BD; /* Change color on hover to match the navbar */
-}
-
-
-
-
-
