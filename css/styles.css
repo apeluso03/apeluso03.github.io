@@ -187,3 +187,11 @@
 a:visited{
     color:#ECCE8E
 }
+
+.contact-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 0;
+}

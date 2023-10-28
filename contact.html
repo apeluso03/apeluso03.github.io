@@ -40,33 +40,40 @@
     </div>
     <div class="emailstyle" style="padding-top: 45px;">
         <h1>Contact Me</h1>
-        <form id="contactform">
-            <div class="form-group">
-                <label for="user_fname">First Name:</label>
-                <input id="user_fname" type="text" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="user_lname">Last Name:</label>
-                <input id="user_lname" type="text" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="user_email">Email:</label>
-                <input id="user_email" type="email" class="form-control" required>
-                <span class="email_error" id="email_error">Format: email@provider.domain</span>
-            </div>
-            <div class="form-group">
-                <label for="user_phone">Phone Number:</label>
-                <input id="user_phone" type="text" class="form-control" required>
-                <span class="phone_error" id="phone_error">Format: ###-###-####</span>
-            </div>
-            <div class="form-group" >
-                <label for="user_message">Message:</label>
-                <br>
-                <textarea id="user_message" class="form-control messageBox" required rows="5"></textarea>
-            </div>
-            <input type="submit" id="go" class="button" value="Submit">
-            <span class="success" id="success">Thank you for your message!</span>
-        </form>
+        <ul class="contact-list">
+            <li style="padding-right: 100px">
+                <form id="contactform">
+                    <div class="form-group">
+                        <label for="user_fname">First Name:</label>
+                        <input id="user_fname" type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user_lname">Last Name:</label>
+                        <input id="user_lname" type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user_email">Email:</label>
+                        <input id="user_email" type="email" class="form-control" required>
+                            <span class="email_error" id="email_error">Format: email@provider.domain</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="user_phone">Phone Number:</label>
+                        <input id="user_phone" type="text" class="form-control" required>
+                        <span class="phone_error" id="phone_error">Format: ###-###-####</span>
+                    </div>
+                    <div class="form-group" >
+                        <label for="user_message">Message:</label>
+                        <br>
+                        <textarea style="width: 100%" id="user_message" 
+                            class="form-control messageBox" required rows="10"></textarea>
+                    </div>
+                    <input type="submit" id="go" class="button" value="Submit">
+                    <span class="success" id="success">Thank you for your message!</span>
+            </form>
+        </li>
+        <li>
+            <img src="images/alex_leaning.jpg" alt="Alex leaning on a podium" width="475" height="300">
+        </li>
     </div>
     <footer>
         <div style="text-align: center;">
