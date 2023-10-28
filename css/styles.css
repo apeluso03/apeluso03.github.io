@@ -140,3 +140,50 @@
     flex: 1;
     text-align: left;
 }
+
+.project-gifs{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.project-gifs li{
+    color: #ECCE8E;
+    padding: 10px;
+    text-align: center;
+}
+
+.popup-text-container {
+    position: relative;
+    display: inline-block; /* Ensures proper positioning of the tooltip */
+  }
+
+.hover-header {
+    text-decoration: underline;
+    cursor: pointer; /* Add a pointer cursor on hover */
+    display: block;
+}
+
+.popup-text {
+    display: none;
+    position: absolute;
+    background-color: #3A3335;
+    border: 1px solid #ED6A5A;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    top: 100%; /* Position the tooltip below the header */
+    left: 0;
+    z-index: 1; /* Ensure the tooltip appears above other elements */
+}
+
+.popup-text-container:hover .popup-text {
+    display: block; /* Show the tooltip when hovering over the container */
+    z-index: 1000;
+}
+
+a:visited{
+    color:#ECCE8E
+}
