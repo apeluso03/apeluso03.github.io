@@ -176,7 +176,7 @@
     padding: 10px;
     border-radius: 5px;
     width: 200px;
-    top: 100%; /* Position the tooltip below the header */
+    top: 20%; /* Position the tooltip below the header */
     left: 0;
     z-index: 1; /* Ensure the tooltip appears above other elements */
 }
