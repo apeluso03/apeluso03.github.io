@@ -197,3 +197,13 @@ a:visited{
     align-items: left;
     padding: 0;
 }
+
+.logo{
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
