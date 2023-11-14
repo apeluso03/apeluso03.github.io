@@ -207,3 +207,41 @@ a:visited{
     width: 100px;
     border-radius: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding-top: 40px;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #3A3335;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        display: inline;
+        margin: 0 2px;
+        position: relative;
+    }
+
+    .dropdown:hover .down {
+        width: 100%; /* Adjust width for dropdown on small screens */
+        margin-bottom: 10px;
+    }
+
+    .footerLinks ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 5px;
+        position: relative;
+    }
+
+    /* ... (other mobile-specific styles) */
+}   
