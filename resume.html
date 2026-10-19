@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume · Alex Peluso</title>
+    <meta name="description" content="Resume of Alex Peluso, Computer Science graduate and full-stack developer.">
+    <meta name="theme-color" content="#131112">
+    <meta property="og:title" content="Resume · Alex Peluso">
+    <meta property="og:image" content="https://apeluso03.github.io/images/web/headshot.jpg">
+    <link rel="icon" type="image/x-icon" href="images/aLogo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="src/main.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NB99LDXPH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5NB99LDXPH');
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main">
+            <a class="brand" href="index.html"><span class="brand-mark">AP</span>Alex Peluso</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html" aria-current="page">Resume</a></li>
+                <li><a class="nav-cta" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="reveal">My resume</h1>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top: 24px;">
+            <div class="container resume-layout">
+                <article class="card resume-doc reveal">
+                    <header>
+                        <h2>Alexander R. Peluso</h2>
+                        <div class="resume-contact">
+                            <span>Toms River, NJ</span>
+                            <a href="tel:+18482403548">(848) 240-3548</a>
+                            <a href="mailto:alexpeluso03@gmail.com">alexpeluso03@gmail.com</a>
+                            <a href="https://github.com/apeluso03" target="_blank" rel="noopener">github.com/apeluso03</a>
+                            <a href="https://www.linkedin.com/in/alexpeluso/" target="_blank" rel="noopener">linkedin.com/in/alexpeluso</a>
+                        </div>
+                    </header>
+
+                    <div class="resume-section">
+                        <h3>Summary</h3>
+                        <p>Computer Science graduate (University of Delaware) who builds full-stack web apps with React, TypeScript, and FastAPI, with hands-on experience in REST APIs, data pipelines, automated testing, and AI-agent tooling. Seeking an entry-level role in web application development or software engineering. Eligible for U.S. Security Clearance.</p>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Education</h3>
+                        <div class="r-entry">
+                            <div class="r-entry-head"><h4>University of Delaware</h4></div>
+                            <div class="r-sub">B.S. Computer Science, Systems and Networks Concentration</div>
+                            <p style="color: var(--muted); font-size: .93rem; margin: 0;">Relevant coursework: Software Engineering, Databases, Computer Networks, Operating Systems, Cybersecurity, Machine Learning</p>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Projects</h3>
+                        <div class="r-entry">
+                            <div class="r-entry-head"><h4>LoL Survival Tracker <span class="badge" style="margin-left:6px;">In progress</span></h4><span class="when">2026</span></div>
+                            <div class="r-sub">React, TypeScript, Tailwind, FastAPI, SQLite, Riot API</div>
+                            <ul class="bullets">
+                                <li>Built a full-stack web app to run a League of Legends challenge with friends (spin wheels, shared champion pool, eliminations, revive tokens, and stats) using React, TanStack Query, and a layout that works on mobile.</li>
+                                <li>Wrote a FastAPI backend with a background poller that pulls finished matches from the Riot API, checks them against the challenge rules, and applies results automatically, flagging edge cases for manual review.</li>
+                                <li>Set up GitHub Actions CI that runs 120+ backend and frontend tests (pytest, Vitest), a production build, and Alembic migration checks.</li>
+                            </ul>
+                        </div>
+                        <div class="r-entry">
+                            <div class="r-entry-head"><h4>Fantasy Football AI Agent &amp; Desktop GUI <span class="badge" style="margin-left:6px;">In progress</span></h4><span class="when">2026</span></div>
+                            <div class="r-sub">Python, OpenAI Responses API, SQLite, Tkinter</div>
+                            <ul class="bullets">
+                                <li>Built an AI agent for a 12-team superflex keeper league that answers keeper, trade, and draft questions by reasoning over live Sleeper data and scraped rankings through a hand-rolled tool-calling loop.</li>
+                                <li>Designed deterministic keeper-cost, trade-value, and power-ranking engines kept separate from the LLM, covered by 84 offline unit tests.</li>
+                                <li>Shipped two Windows desktop editions, including a user edition with a setup wizard that connects to any Sleeper league, plus player search and recent-performance snapshots.</li>
+                            </ul>
+                        </div>
+                        <div class="r-entry">
+                            <div class="r-entry-head"><h4>FileFlow, Async CSV Processing REST API</h4><span class="when">2026</span></div>
+                            <div class="r-sub">FastAPI, Celery, Redis, PostgreSQL, Docker</div>
+                            <ul class="bullets">
+                                <li>Built a 5-service containerized pipeline with async task queuing, API key auth, and a CI-tested integration suite (11 tests, no mocks).</li>
+                            </ul>
+                        </div>
+                        <div class="r-entry">
+                            <div class="r-entry-head"><h4>Custom Language Compiler &amp; Custom UNIX Shell</h4><span class="when">2023 – 2024</span></div>
+                            <div class="r-sub">TypeScript, C</div>
+                            <ul class="bullets">
+                                <li>Built a compiler targeting WebAssembly and RISC-V and a UNIX shell with process creation, piping, and I/O redirection, with memory safety verified via Valgrind.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Work history</h3>
+                        <div class="r-entry">
+                            <div class="r-entry-head"><h4>Data Pipeline Developer, EPRI (Client Project)</h4><span class="when">2024 – 2025</span></div>
+                            <ul class="bullets" style="margin-top: 8px;">
+                                <li>Built an ETL pipeline with Scrapy and Playwright to scrape course catalogs from 50+ universities, plus a keyword-scoring system that flagged hydrogen energy curriculum gaps in structured reports the client used for curriculum decisions.</li>
+                            </ul>
+                        </div>
+                        <div class="r-entry">
+                            <div class="r-entry-head"><h4>Shift Leader, Playa Bowls</h4><span class="when">May 2024 – Present</span></div>
+                            <div class="r-sub">Toms River, NJ / Newark, DE</div>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Activities</h3>
+                        <div class="r-entry">
+                            <div class="r-entry-head"><h4>Production Team Member, UD Esports</h4><span class="when">Sep 2023 – May 2025</span></div>
+                            <ul class="bullets" style="margin-top: 8px;">
+                                <li>Operated live Twitch broadcasts (OBS, Stream Deck, GoXLR) and designed overlays and camera systems. Awarded <strong>Producer of the Year (2024)</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>Skills</h3>
+                        <div class="r-skills">
+                            <div><b>Languages:</b> TypeScript, JavaScript, Python, SQL, HTML/CSS, C, C++, C#, Java</div>
+                            <div><b>Web &amp; frameworks:</b> React, Tailwind CSS, Vite, TanStack Query, FastAPI, REST APIs, SQLModel, Celery</div>
+                            <div><b>Tools &amp; technologies:</b> Git, GitHub Actions, Docker, PostgreSQL, SQLite, Redis, Alembic, pytest, Vitest, Playwright, Scrapy, Claude/OpenAI/Gemini APIs</div>
+                            <div><b>Core competencies:</b> Full-stack web development, API design, automated testing, data pipelines, AI agent tooling, debugging, Agile development</div>
+                            <div><b>General:</b> Problem solving, communication, collaboration, adaptability</div>
+                        </div>
+                    </div>
+                </article>
+
+                <aside class="resume-aside">
+                    <div class="card aside-card reveal">
+                        <h3>PDF version</h3>
+                        <a class="btn btn-primary" href="images/AlexPelusoResume.pdf" download="AlexPeluso_Resume.pdf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+                            Download PDF
+                        </a>
+                        <a class="btn btn-ghost" href="images/AlexPelusoResume.pdf" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4 10 14M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>
+                            Open in new tab
+                        </a>
+                    </div>
+                    <div class="card aside-card reveal" style="--d:.06s">
+                        <h3>Learn more about my work</h3>
+                        <p>More detail on each project, with links to the code.</p>
+                        <a class="arrow-link" href="projects.html">See projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span data-year>2026</span> Alex Peluso · Toms River, NJ</p>
+            <div class="footer-links">
+                <a class="icon-link" href="https://github.com/apeluso03" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></a>
+                <a class="icon-link" href="https://www.linkedin.com/in/alexpeluso/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a>
+                <a class="icon-link" href="mailto:alexpeluso03@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

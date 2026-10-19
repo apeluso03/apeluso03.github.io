@@ -1,57 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="/css/styles.css">
-        <link rel="icon" type="image/x-icon" href="images/aLogo.ico">
-        <title>Home</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alex Peluso · Software Engineer</title>
+    <meta name="description" content="Alex Peluso is a Computer Science graduate from the University of Delaware who builds full-stack web apps with React, TypeScript, and FastAPI.">
+    <meta name="theme-color" content="#131112">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Alex Peluso · Software Engineer">
+    <meta property="og:description" content="Full-stack web apps, data pipelines, automated testing, and AI-agent tooling.">
+    <meta property="og:url" content="https://apeluso03.github.io/">
+    <meta property="og:image" content="https://apeluso03.github.io/images/web/headshot.jpg">
+    <link rel="icon" type="image/x-icon" href="images/aLogo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="src/main.js" defer></script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5NB99LDXPH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NB99LDXPH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5NB99LDXPH');
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  gtag('config', 'G-5NB99LDXPH');
-</script>
-        <body style="padding-top: 40px; background-color: #3A3335;">
-            <div style="text-align: center;">
-                <div class="navbar">
-                    <ul style="border-bottom: 2px solid #ED6A5A; margin-bottom: 10px; padding-bottom: 10px;">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutme.html">About Me</a></li>
-                        <li><a href="images/AlexPelusoResume.pdf" target="_blank">Resume</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li class="dropdown">
-                            <a href="#classLinks">Class Links</a>
-                            <ul class="down">
-                                <li><a href="https://mattm401.github.io/">Course Page</a></li>
-                                <li><a href="https://arjunman0413.github.io/">Prev Student</a></li>
-                                <li><a href="https://awrose.github.io/">Next Student</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="box">
-                <h1>Alex Peluso</h1>
-                <h2>Aspiring Software Engineer</h2>
-                <img src="images/alex_headshot.jpg" alt="photo of me" width="300" height="375">
-            </div>
-            <footer>
-                <div style="text-align: center;">
-                    <div class="footerLinks">
-                        <ul style="border-top: 2px solid #ED6A5A; margin-top: 10px; padding-top: 10px;">
-                            <li><a href="https://github.com/apeluso03" target="_blank"><img src="images/GitHub-Mark.png" width="45" height="45" alt="GitHub"></a></li>
-                            <li><a href="contact.html"><p style="color: #ECCE8E; text-decoration: underline;">Email: apeluso@udel.edu</p></a></li>
-                            <li><a href="tel:+18482403548"><p style="color: #ECCE8E; text-decoration: underline;">Phone: (848) 240-3548</p></a></li>
-                            <li><a href="https://www.linkedin.com/in/alexpeluso/"><img src="images/LinkedIn_icon.png" width="45" height="45" alt="LinkedIn"></a></li>
-                        </ul>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main">
+            <a class="brand" href="index.html"><span class="brand-mark">AP</span>Alex Peluso</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a class="nav-cta" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <div class="status-pill reveal"><span class="dot"></span>Open to entry-level software engineering roles</div>
+                    <h1 class="reveal" style="--d:.05s">Hi, I'm <span class="grad-text">Alex Peluso.</span></h1>
+                    <p class="hero-role reveal" style="--d:.1s" data-typed='["Software engineer","Full-stack developer","Backend and data pipelines"]'>
+                        &gt; <span class="typed-text">Software engineer</span><span class="caret" aria-hidden="true"></span>
+                    </p>
+                    <p class="hero-summary reveal" style="--d:.15s">
+                        I'm a Computer Science graduate from the <strong>University of Delaware</strong>. I build full-stack
+                        web apps, mostly with <strong>React, TypeScript, and FastAPI</strong>. Recently I've also been
+                        working on data pipelines and AI agents.
+                    </p>
+                    <div class="btn-row reveal" style="--d:.2s">
+                        <a class="btn btn-primary" href="projects.html">
+                            View projects
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </a>
+                        <a class="btn btn-ghost" href="images/AlexPelusoResume.pdf" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+                            Download resume
+                        </a>
+                    </div>
+                    <div class="hero-social reveal" style="--d:.25s">
+                        <a class="icon-link" href="https://github.com/apeluso03" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                        </a>
+                        <a class="icon-link" href="https://www.linkedin.com/in/alexpeluso/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+                        </a>
+                        <a class="icon-link" href="mailto:alexpeluso03@gmail.com" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                        </a>
                     </div>
                 </div>
-            </footer>
-        </body>
+
+                <div class="portrait reveal" style="--d:.15s">
+                    <div class="portrait-frame">
+                        <img src="images/web/headshot.jpg" alt="Portrait of Alex Peluso" width="900" height="1200" fetchpriority="high">
+                    </div>
+                    <div class="floating-chip one">
+                        <span class="chip-icon">✓</span>
+                        <div><strong>120+ tests in CI</strong><span>pytest · Vitest · GitHub Actions</span></div>
+                    </div>
+                    <div class="floating-chip two">
+                        <span class="chip-icon" style="font: 700 .7rem/1 var(--font-display);">UD</span>
+                        <div><strong>B.S. Computer Science</strong><span>University of Delaware</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="section-tight" aria-label="Highlights">
+            <div class="container">
+                <div class="stats reveal">
+                    <div class="stat"><div class="stat-num grad-text">215+</div><div class="stat-label">automated tests across my recent projects</div></div>
+                    <div class="stat"><div class="stat-num grad-text">50+</div><div class="stat-label">university course catalogs scraped for EPRI</div></div>
+                    <div class="stat"><div class="stat-num grad-text">5</div><div class="stat-label">Docker services in FileFlow</div></div>
+                    <div class="stat"><div class="stat-num grad-text">2024</div><div class="stat-label">UD Esports Producer of the Year</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured work -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head split reveal">
+                    <div>
+                        <h2>Recent projects</h2>
+                    </div>
+                    <a class="arrow-link" href="projects.html">All projects
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </div>
+
+                <div class="project-grid">
+                    <a class="card card-hover project-card reveal" href="projects.html#lol-survival">
+                        <div class="viz" aria-hidden="true">
+                            <div class="viz-window">
+                                <div class="viz-bar"><i></i><i></i><i></i><em>survival / wheels</em></div>
+                                <div class="viz-body">
+                                    <div class="reel"><div class="reel-wrap"><span class="r1">?</span><span class="r2">?</span><span class="r3">?</span><span class="win">★</span><span class="r1">?</span><span class="r2">?</span></div></div>
+                                    <div class="standings">
+                                        <div class="standing"><b>Player 1</b><span class="tokens">◆◆</span><span class="pill-s alive">alive</span></div>
+                                        <div class="standing"><b>Player 2</b><span class="tokens">◆</span><span class="pill-s out">out</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="card-meta"><span>Full-stack · 2026</span><span class="badge">In progress</span></div>
+                            <h3>LoL Survival Tracker</h3>
+                            <p>A web app for running a League of Legends challenge with friends. Match results come in automatically from the Riot API.</p>
+                            <ul class="tags"><li class="tag">React</li><li class="tag">TypeScript</li><li class="tag">FastAPI</li><li class="tag">SQLite</li></ul>
+                        </div>
+                    </a>
+
+                    <a class="card card-hover project-card reveal" style="--d:.08s" href="projects.html#fantasy-agent">
+                        <div class="viz" aria-hidden="true">
+                            <div class="viz-window">
+                                <div class="viz-bar"><i></i><i></i><i></i><em>fantasy-agent</em></div>
+                                <div class="viz-body chat">
+                                    <div class="bubble user">Keep my RB in round 3, or draft fresh?</div>
+                                    <div class="trace"><span><code>keeper_cost</code>(round=3)</span><span><code>trade_value</code>(player)</span></div>
+                                    <div class="bubble agent"><b>Keep.</b> His value is a late 2nd, so a 3rd-round cost is a discount.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="card-meta"><span>AI agent · 2026</span><span class="badge">In progress</span></div>
+                            <h3>Fantasy Football AI Agent</h3>
+                            <p>An AI agent that answers keeper, trade, and draft questions for my fantasy football league using live Sleeper data.</p>
+                            <ul class="tags"><li class="tag">Python</li><li class="tag">OpenAI API</li><li class="tag">SQLite</li><li class="tag">Tkinter</li></ul>
+                        </div>
+                    </a>
+
+                    <a class="card card-hover project-card reveal" style="--d:.16s" href="projects.html#fileflow">
+                        <div class="viz" aria-hidden="true">
+                            <div class="viz-window">
+                                <div class="viz-bar"><i></i><i></i><i></i><em>~/fileflow</em></div>
+                                <div class="viz-body term"><span class="p">$</span> <span class="c">curl -X POST /upload -F file=@data.csv</span>
+<span class="d">{</span><span class="k">"status"</span>: <span class="s">"pending"</span><span class="d">}</span>
+<span class="p">$</span> <span class="c">curl /jobs/8f3c…</span>
+<span class="d">{</span><span class="k">"status"</span>: <span class="s">"done"</span>, <span class="k">"rows"</span>: <span class="s">12408</span><span class="d">}</span></div>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="card-meta"><span>Backend · 2026</span><span class="badge gold">Complete</span></div>
+                            <h3>FileFlow</h3>
+                            <p>A REST API that processes CSV uploads in the background using Celery, Redis, and PostgreSQL.</p>
+                            <ul class="tags"><li class="tag">FastAPI</li><li class="tag">Celery</li><li class="tag">PostgreSQL</li><li class="tag">Docker</li></ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech marquee -->
+        <section aria-label="Technologies I work with">
+            <div class="marquee">
+                <div class="marquee-track">
+                    <span>TypeScript</span><span>React</span><span>FastAPI</span><span>Python</span><span>PostgreSQL</span><span>Docker</span><span>Celery</span><span>Redis</span><span>Tailwind CSS</span><span>TanStack Query</span><span>GitHub Actions</span><span>pytest</span><span>Vitest</span><span>Playwright</span><span>Scrapy</span><span>SQLite</span><span>Alembic</span><span>C / C++</span>
+                    <span aria-hidden="true">TypeScript</span><span aria-hidden="true">React</span><span aria-hidden="true">FastAPI</span><span aria-hidden="true">Python</span><span aria-hidden="true">PostgreSQL</span><span aria-hidden="true">Docker</span><span aria-hidden="true">Celery</span><span aria-hidden="true">Redis</span><span aria-hidden="true">Tailwind CSS</span><span aria-hidden="true">TanStack Query</span><span aria-hidden="true">GitHub Actions</span><span aria-hidden="true">pytest</span><span aria-hidden="true">Vitest</span><span aria-hidden="true">Playwright</span><span aria-hidden="true">Scrapy</span><span aria-hidden="true">SQLite</span><span aria-hidden="true">Alembic</span><span aria-hidden="true">C / C++</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Now -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>What I'm working on</h2>
+                </div>
+                <div class="now-grid">
+                    <div class="card now-item reveal">
+                        <span class="num">01</span>
+                        <h3>Finding a full-time role</h3>
+                        <p>I'm looking for an entry-level job in web development or software engineering. I'm eligible for U.S. security clearance.</p>
+                    </div>
+                    <div class="card now-item reveal" style="--d:.08s">
+                        <span class="num">02</span>
+                        <h3>Learning through projects</h3>
+                        <p>Each project covers something new for me: CI and testing with LoL Survival, LLM tool calling with FantasyAgent, and task queues and Docker with FileFlow.</p>
+                    </div>
+                    <div class="card now-item reveal" style="--d:.16s">
+                        <span class="num">03</span>
+                        <h3>Next up</h3>
+                        <p>Adding live updates to LoL Survival with WebSockets, moving it to PostgreSQL, and hosting it publicly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section-tight">
+            <div class="container">
+                <div class="cta-band reveal">
+                    <div>
+                        <h2>Get in touch</h2>
+                        <p>I'm currently looking for work. Feel free to reach out.</p>
+                    </div>
+                    <div class="btn-row">
+                        <a class="btn btn-primary" href="contact.html">Contact me</a>
+                        <a class="btn btn-ghost" href="aboutme.html">About me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span data-year>2026</span> Alex Peluso · Toms River, NJ</p>
+            <div class="footer-links">
+                <a class="icon-link" href="https://github.com/apeluso03" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></a>
+                <a class="icon-link" href="https://www.linkedin.com/in/alexpeluso/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a>
+                <a class="icon-link" href="mailto:alexpeluso03@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

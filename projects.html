@@ -1,97 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="/css/styles.css">
-        <link rel="icon" type="image/x-icon" href="images/aLogo.ico">
-        <title>Projects</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects · Alex Peluso</title>
+    <meta name="description" content="Projects by Alex Peluso: full-stack web apps, an AI agent, an async processing API, a data pipeline for EPRI, and systems work in C and TypeScript.">
+    <meta name="theme-color" content="#131112">
+    <meta property="og:title" content="Projects · Alex Peluso">
+    <meta property="og:image" content="https://apeluso03.github.io/images/web/headshot.jpg">
+    <link rel="icon" type="image/x-icon" href="images/aLogo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="src/main.js" defer></script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5NB99LDXPH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NB99LDXPH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5NB99LDXPH');
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  gtag('config', 'G-5NB99LDXPH');
-</script>
-    <body style="padding-top: 30px; background-color: #3A3335;">
-        <div style="text-align: center;">
-            <div class="navbar">
-                <ul style="border-bottom: 2px solid #ED6A5A; margin-bottom: 10px; padding-bottom: 10px;">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutme.html">About Me</a></li>
-                    <li><a href="images/AlexPelusoResume.pdf" target="_blank">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li class="dropdown">
-                        <a href="#classLinks">Class Links</a>
-                        <ul class="down">
-                            <li><a href="https://mattm401.github.io/">Course Page</a></li>
-                            <li><a href="https://arjunman0413.github.io/">Prev Student</a></li>
-                            <li><a href="https://awrose.github.io/">Next Student</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <h1 style="color:#ECCE8E; text-align: center;">Projects</h1>
-        <ul class="project-gifs">
-            <li>
-                <div class="popup-text-container">
-                    <h2 class="hover-header">Binary Clock</h2>
-                    <div class="popup-text">Clock using a binary system to display the real-world time. 
-                      Hours, minutes, and seconds are shown as either on or off values. 
-                      Made with C, Bash, and Git. Project for CISC210 Introduction to Systems Programming.
-                    </div>
-                    <img src="images/binary_clock.gif" alt="Binary Clock GIF" width="100" height="200">
-                  </div>
-            </li>
-            <li>
-                <div class="popup-text-container">
-                    <h2 class="hover-header"><a href="https://jfmarks.github.io/Cisc275_FinalProject/">
-                        Rate-a-Restaurant</a></h2>
-                    <div class="popup-text">Group project showcasing the React framework and its
-                        drag-and-drop functionality. Created for CISC275 Introduction to Software Engineering.
-                    </div>
-                    <img src="images/rate_restaurant.gif" alt="Rate-a-Restaurant GIF" width="400" height="200">
-                  </div>
-            </li>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main">
+            <a class="brand" href="index.html"><span class="brand-mark">AP</span>Alex Peluso</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="projects.html" aria-current="page">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a class="nav-cta" href="contact.html">Contact</a></li>
             </ul>
-            <ul class="project-gifs" style="margin-bottom: 100px;">
-                <li>
-                    <div class="popup-text-container">
-                        <h2 class="hover-header">
-                            Snake Game</h2>
-                        <div class="popup-text">Classic snake style game coded in Python and run using
-                            PyGame. Created in the Thonny Python IDE for CISC108 Introduction to Computer Science.
-                        </div>
-                        <img src="images/snake_gif.gif" alt="Snake Game GIF" width="400" height="200">
-                      </div>
-                </li>
-            <li>
-                <div class="popup-text-container">
-                    <h2 class="hover-header">
-                        Custom Shell</h2>
-                    <div class="popup-text">Custom shell with built-in commands made using C, Bash, 
-                        and Assembly. Utilized Valgrind for memory leak detection.
-                        Created for CISC361 Introduction to Operating Systems.
-                    </div>
-                    <img src="images/mysh.gif" alt="Custom Shell GIF" width="400" height="200">
-                  </div>
-            </li>
-        </ul>
-        <footer>
-            <div style="text-align: center;">
-                <div class="footerLinks">
-                    <ul style="border-top: 2px solid #ED6A5A; margin-top: 10px; padding-top: 10px;">
-                        <li><a href="https://github.com/apeluso03" target="_blank"><img src="images/GitHub-Mark.png" width="45" height="45" alt="GitHub"></a></li>
-                        <li><a href="contact.html"><p style="color: #ECCE8E; text-decoration: underline;">Email: apeluso@udel.edu</p></a></li>
-                        <li><a href="tel:+18482403548"><p style="color: #ECCE8E; text-decoration: underline;">Phone: (848) 240-3548</p></a></li>
-                        <li><a href="https://www.linkedin.com/in/alexpeluso/"><img src="images/LinkedIn_icon.png" width="45" height="45" alt="LinkedIn"></a></li>
-                    </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="reveal">Projects</h1>
+                <p class="lede reveal" style="--d:.05s">Personal projects, client work, and coursework.</p>
+                <div class="filter-bar reveal" style="--d:.15s; margin-top: 30px;" role="group" aria-label="Filter projects">
+                    <button type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button type="button" data-filter="fullstack" aria-pressed="false">Full-stack</button>
+                    <button type="button" data-filter="ai" aria-pressed="false">AI</button>
+                    <button type="button" data-filter="backend" aria-pressed="false">Backend &amp; data</button>
+                    <button type="button" data-filter="systems" aria-pressed="false">Systems</button>
                 </div>
             </div>
-        </footer>
-    </body>
+        </section>
+
+        <section class="section" style="padding-top: 40px;" data-group>
+            <div class="container feature-list">
+
+                <!-- LoL Survival Tracker -->
+                <article class="card feature reveal" id="lol-survival" data-tags="fullstack">
+                    <div class="viz" aria-hidden="true">
+                        <div class="viz-window">
+                            <div class="viz-bar"><i></i><i></i><i></i><em>survival.local / wheels</em></div>
+                            <div class="viz-body">
+                                <div class="reel"><div class="reel-wrap"><span class="r1">?</span><span class="r2">?</span><span class="r3">?</span><span class="r1">?</span><span class="win">★</span><span class="r2">?</span><span class="r3">?</span><span class="r1">?</span></div></div>
+                                <div class="standings">
+                                    <div class="standing"><b>Player 1</b><span class="tokens">◆◆</span><span class="pill-s alive">alive</span></div>
+                                    <div class="standing"><b>Player 2</b><span class="tokens">◆</span><span class="pill-s alive">alive</span></div>
+                                    <div class="standing"><b>Player 3</b><span class="tokens"></span><span class="pill-s out">eliminated</span></div>
+                                </div>
+                                <div class="poll-line">poller · match checked against rules · <b>✓ applied</b></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-body">
+                        <div class="feature-top"><span class="badge">In progress</span><span class="tag">Full-stack</span><span class="when">2026</span></div>
+                        <h3>LoL Survival Tracker</h3>
+                        <p class="summary">A web app my friends and I use to run a League of Legends challenge. Players spin for champions from a shared pool, losses lead to eliminations, and win streaks earn revive tokens.</p>
+                        <ul class="bullets">
+                            <li>Frontend built with <strong>React, TypeScript</strong>, TanStack Query, and Tailwind. Includes spin wheels, a champion pool, a shop, leaderboards, and achievements, and works on mobile.</li>
+                            <li><strong>FastAPI</strong> backend with a background job that pulls finished matches from the <strong>Riot API</strong>, checks them against the challenge rules, and records the results. Matches that fail a check are flagged for manual review.</li>
+                            <li>Account system with hashed passwords, session cookies, invite links, and lockout after too many failed logins.</li>
+                            <li><strong>GitHub Actions</strong> CI runs 120+ backend and frontend tests (pytest, Vitest), a production build, and Alembic migration checks.</li>
+                        </ul>
+                        <div class="metric-row">
+                            <div class="metric"><strong>120+</strong>tests in CI</div>
+                            <div class="metric"><strong>90s</strong>match polling</div>
+                            <div class="metric"><strong>22</strong>achievements</div>
+                        </div>
+                        <ul class="tags"><li class="tag">React</li><li class="tag">TypeScript</li><li class="tag">Tailwind</li><li class="tag">TanStack Query</li><li class="tag">FastAPI</li><li class="tag">SQLite</li><li class="tag">Alembic</li><li class="tag">Riot API</li></ul>
+                        <div class="feature-links">
+                            <a class="btn btn-ghost" href="https://github.com/apeluso03/LeagueSurvival" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                                View repo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Fantasy Football AI Agent -->
+                <article class="card feature reveal" id="fantasy-agent" data-tags="ai">
+                    <div class="viz" aria-hidden="true">
+                        <div class="viz-window">
+                            <div class="viz-bar"><i></i><i></i><i></i><em>FantasyAgent · ask</em></div>
+                            <div class="viz-body chat">
+                                <div class="bubble user">Should I keep my RB in round 3 or draft fresh?</div>
+                                <div class="trace">
+                                    <span><code>get_roster</code>(team="me")</span>
+                                    <span><code>keeper_cost</code>(player, round=3)</span>
+                                    <span><code>best_available</code>(pos="RB")</span>
+                                </div>
+                                <div class="bubble agent"><b>Keep him.</b> Your 3rd-round cost is below his ranked value, and the RBs likely left at that pick are a tier lower.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-body">
+                        <div class="feature-top"><span class="badge">In progress</span><span class="tag">AI agent</span><span class="when">2026</span></div>
+                        <h3>Fantasy Football AI Agent</h3>
+                        <p class="summary">An AI agent for my 12-team fantasy football keeper league. It answers keeper, trade, and draft questions using live data from Sleeper and scraped player rankings.</p>
+                        <ul class="bullets">
+                            <li>Wrote the <strong>tool-calling loop</strong> myself using the OpenAI Responses API. The model can choose from 9 tools, and every call is logged.</li>
+                            <li>Keeper costs, trade values, and power rankings are calculated in <strong>regular Python code</strong>, not by the LLM. The model decides which tools to use and explains the results. This logic is covered by <strong>84 unit tests</strong>.</li>
+                            <li>Built a rankings scraper and name matching that automatically matches about 98.6% of players.</li>
+                            <li>Packaged <strong>two Windows desktop apps</strong>: a developer version that shows the raw tool calls, and a user version with a setup wizard that works with any Sleeper league.</li>
+                        </ul>
+                        <div class="metric-row">
+                            <div class="metric"><strong>84</strong>unit tests</div>
+                            <div class="metric"><strong>9</strong>agent tools</div>
+                            <div class="metric"><strong>~98.6%</strong>players matched</div>
+                        </div>
+                        <ul class="tags"><li class="tag">Python</li><li class="tag">OpenAI Responses API</li><li class="tag">SQLite</li><li class="tag">SQLAlchemy</li><li class="tag">httpx</li><li class="tag">Tkinter</li><li class="tag">PyInstaller</li></ul>
+                        <div class="feature-links">
+                            <a class="btn btn-ghost" href="https://github.com/apeluso03/FantasyAgent" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                                View repo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- FileFlow -->
+                <article class="card feature reveal" id="fileflow" data-tags="backend">
+                    <div class="viz" aria-hidden="true">
+                        <div class="viz-window">
+                            <div class="viz-bar"><i></i><i></i><i></i><em>~/fileflow · make up</em></div>
+                            <div class="viz-body">
+                                <div class="term"><span class="p">$</span> <span class="c">curl -X POST :8000/upload \
+    -H "X-API-Key: ••••" -F file=@sales.csv</span>
+<span class="d">{</span> <span class="k">"job_id"</span>: <span class="s">"8f3c…"</span>, <span class="k">"status"</span>: <span class="s">"pending"</span> <span class="d">}</span>
+
+<span class="p">$</span> <span class="c">curl :8000/jobs/8f3c…</span>
+<span class="d">{</span> <span class="k">"status"</span>: <span class="s">"done"</span>, <span class="k">"row_count"</span>: <span class="s">12408</span>,
+  <span class="k">"columns"</span>: <span class="d">[…]</span>, <span class="k">"stats"</span>: <span class="d">{ min, max, mean, median }</span> <span class="d">}</span></div>
+                                <div class="service-row"><span>api</span><span>worker</span><span>redis</span><span>postgres</span><span>minio</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-body">
+                        <div class="feature-top"><span class="badge gold">Complete</span><span class="tag">Backend</span><span class="when">2026</span></div>
+                        <h3>FileFlow</h3>
+                        <p class="summary">A REST API for processing CSV files in the background. You upload a file, get a job ID back, and check the job until the results are ready.</p>
+                        <ul class="bullets">
+                            <li>Runs on <strong>Docker Compose</strong>: FastAPI, a Celery worker, Redis, PostgreSQL, and MinIO for S3-compatible file storage. One command starts everything.</li>
+                            <li><strong>API key authentication</strong>, where each key can only see its own jobs. Results include row counts, column types, null counts, and basic statistics.</li>
+                            <li>Files can be stored on local disk or S3, set by an environment variable.</li>
+                            <li><strong>11 integration tests</strong> with no mocks, running in CI.</li>
+                        </ul>
+                        <div class="metric-row">
+                            <div class="metric"><strong>5</strong>services</div>
+                            <div class="metric"><strong>11</strong>integration tests</div>
+                        </div>
+                        <ul class="tags"><li class="tag">FastAPI</li><li class="tag">Celery</li><li class="tag">Redis</li><li class="tag">PostgreSQL</li><li class="tag">MinIO / S3</li><li class="tag">Docker</li><li class="tag">pandas</li></ul>
+                        <div class="feature-links">
+                            <a class="btn btn-ghost" href="https://github.com/apeluso03/fileflow" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                                View repo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- EPRI -->
+                <article class="card feature reveal" id="epri" data-tags="backend">
+                    <div class="viz" aria-hidden="true">
+                        <div class="pipeline">
+                            <div class="pipe-steps">
+                                <div class="pipe-step"><div class="node">⌕</div><b>Crawl</b>Scrapy · Playwright</div>
+                                <div class="pipe-step"><div class="node">⧉</div><b>Parse</b>HTML · PDF · JS</div>
+                                <div class="pipe-step"><div class="node">≡</div><b>Score</b>keyword system</div>
+                                <div class="pipe-step"><div class="node">⇩</div><b>Report</b>CSV · metrics</div>
+                            </div>
+                            <div class="pipe-stats">
+                                <div><strong>50+</strong>universities</div>
+                                <div><strong>92%</strong>HTML coverage</div>
+                                <div><strong>ETL</strong>end-to-end</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-body">
+                        <div class="feature-top"><span class="badge gold">Client project</span><span class="tag">Data pipeline</span><span class="when">Sep 2024 – May 2025</span></div>
+                        <h3>Hydrogen Workforce Scraper · EPRI</h3>
+                        <p class="summary">My senior design project, built with a team for the Electric Power Research Institute (EPRI). We built a pipeline that finds hydrogen energy courses offered at universities across the U.S.</p>
+                        <ul class="bullets">
+                            <li>Built the <strong>ETL pipeline</strong> in Python with Scrapy and Playwright to scrape, filter, and score course data.</li>
+                            <li>Collected course catalogs from <strong>50+ universities</strong>, covering 92% of HTML-based catalogs.</li>
+                            <li>Built a <strong>keyword-scoring system</strong> to find gaps in hydrogen energy coursework. EPRI used the reports to help make curriculum decisions.</li>
+                            <li>Also worked on PDF parsing, handling JavaScript-heavy pages, and Makefile commands for running the pipeline.</li>
+                        </ul>
+                        <ul class="tags"><li class="tag">Python</li><li class="tag">Scrapy</li><li class="tag">Playwright</li><li class="tag">PDF parsing</li><li class="tag">Make</li></ul>
+                        <div class="feature-links">
+                            <a class="btn btn-ghost" href="https://github.com/IsaacWeber1/final_results" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                                Team repo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Earlier work -->
+        <section class="section" style="padding-top: 24px;" data-group>
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>School projects</h2>
+                    <p>Projects from my classes at the University of Delaware.</p>
+                </div>
+                <div class="archive-grid">
+                    <article class="card card-hover archive-card reveal" data-tags="systems">
+                        <div class="viz" aria-hidden="true">
+                            <div class="viz-window">
+                                <div class="viz-bar"><i></i><i></i><i></i><em>compiler</em></div>
+                                <div class="viz-body term"><span class="p">$</span> <span class="c">compile prog.src --target wasm</span>
+<span class="s">✓</span> <span class="d">parse</span>   <span class="s">✓</span> <span class="d">typecheck</span>   <span class="s">✓</span> <span class="d">codegen</span>
+<span class="k">→ prog.wasm</span>  <span class="d">|</span>  <span class="k">→ prog.s</span> <span class="d">(RISC-V)</span></div>
+                            </div>
+                        </div>
+                        <div class="archive-body">
+                            <div class="card-meta"><span>Spring 2024</span></div>
+                            <h3>Custom Language Compiler</h3>
+                            <p>A compiler for a custom language that outputs WebAssembly and RISC-V. Includes parsing, type checking, and code generation.</p>
+                            <ul class="tags"><li class="tag">TypeScript</li><li class="tag">WebAssembly</li><li class="tag">RISC-V</li></ul>
+                            <a class="arrow-link" href="https://github.com/apeluso03/Compiler-Project" target="_blank" rel="noopener">View repo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                        </div>
+                    </article>
+
+                    <article class="card card-hover archive-card reveal" style="--d:.06s" data-tags="systems">
+                        <div class="viz media"><img src="images/mysh.gif" alt="Demo of the custom shell running commands" loading="lazy"></div>
+                        <div class="archive-body">
+                            <div class="card-meta"><span>Spring 2023</span></div>
+                            <h3>Custom UNIX Shell</h3>
+                            <p>A UNIX shell written in C that runs programs and supports pipes, I/O redirection, and built-in commands. Checked for memory leaks with Valgrind.</p>
+                            <ul class="tags"><li class="tag">C</li><li class="tag">Bash</li><li class="tag">Valgrind</li></ul>
+                            <a class="arrow-link" href="https://github.com/apeluso03/Custom-Shell-Project" target="_blank" rel="noopener">View repo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                        </div>
+                    </article>
+
+                    <article class="card card-hover archive-card reveal" style="--d:.12s" data-tags="systems">
+                        <div class="viz media"><img src="images/binary_clock.gif" alt="Binary clock displaying the current time" loading="lazy"></div>
+                        <div class="archive-body">
+                            <div class="card-meta"><span>Systems programming</span></div>
+                            <h3>Binary Clock</h3>
+                            <p>Displays the current time in binary. Built for Intro to Systems Programming.</p>
+                            <ul class="tags"><li class="tag">C</li><li class="tag">Bash</li><li class="tag">Git</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="card card-hover archive-card reveal" data-tags="fullstack">
+                        <div class="viz media"><img src="images/rate_restaurant.gif" alt="Rate-a-Restaurant drag-and-drop interface" loading="lazy"></div>
+                        <div class="archive-body">
+                            <div class="card-meta"><span>Software engineering</span></div>
+                            <h3>Rate-a-Restaurant</h3>
+                            <p>A group project built with React where users rank restaurants with drag and drop. Built for Intro to Software Engineering.</p>
+                            <ul class="tags"><li class="tag">React</li><li class="tag">Drag &amp; drop</li><li class="tag">Team project</li></ul>
+                            <a class="arrow-link" href="https://jfmarks.github.io/Cisc275_FinalProject/" target="_blank" rel="noopener">Live demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                        </div>
+                    </article>
+
+                    <article class="card card-hover archive-card reveal" style="--d:.06s" data-tags="classic">
+                        <div class="viz media"><img src="images/snake_gif.gif" alt="Snake game being played" loading="lazy"></div>
+                        <div class="archive-body">
+                            <div class="card-meta"><span>Intro to CS</span></div>
+                            <h3>Snake Game</h3>
+                            <p>Snake, written in Python with PyGame for Intro to Computer Science.</p>
+                            <ul class="tags"><li class="tag">Python</li><li class="tag">PyGame</li></ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-tight">
+            <div class="container">
+                <div class="cta-band reveal">
+                    <div>
+                        <h2>More on GitHub</h2>
+                        <p>Other projects and coursework are on my GitHub.</p>
+                    </div>
+                    <a class="btn btn-primary" href="https://github.com/apeluso03" target="_blank" rel="noopener">Visit my GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span data-year>2026</span> Alex Peluso · Toms River, NJ</p>
+            <div class="footer-links">
+                <a class="icon-link" href="https://github.com/apeluso03" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></a>
+                <a class="icon-link" href="https://www.linkedin.com/in/alexpeluso/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a>
+                <a class="icon-link" href="mailto:alexpeluso03@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
